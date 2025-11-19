@@ -5,6 +5,10 @@
 [![Python Versions](https://img.shields.io/pypi/pyversions/uuidify.svg)](https://pypi.org/project/uuidify/)
 [![License](https://img.shields.io/github/license/ilkereroglu/uuidify-python.svg)](https://github.com/ilkereroglu/uuidify-python/blob/main/LICENSE)
 [![Python Tests](https://github.com/ilkereroglu/uuidify-python/actions/workflows/test.yaml/badge.svg)](https://github.com/ilkereroglu/uuidify-python/actions/workflows/test.yaml)
+[![Downloads](https://img.shields.io/pypi/dm/uuidify)](https://pypi.org/project/uuidify/)
+[![Code Size](https://img.shields.io/github/languages/code-size/ilkereroglu/uuidify-python)](https://github.com/ilkereroglu/uuidify-python)
+[![PyPI - Wheel](https://img.shields.io/pypi/wheel/uuidify.svg)](https://pypi.org/project/uuidify/)
+[![PyPI - Status](https://img.shields.io/pypi/status/uuidify.svg)](https://pypi.org/project/uuidify/)
 
 Minimal, idiomatic Python client for generating UUIDv1/v4/v7 and ULID identifiers through UUIDify’s globally distributed API.
 
