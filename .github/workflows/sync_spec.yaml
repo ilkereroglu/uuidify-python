@@ -1,0 +1,26 @@
+name: Sync OpenAPI Spec
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Run daily
+  workflow_dispatch:
+
+jobs:
+  sync-spec:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Download OpenAPI Spec
+        run: |
+          curl -o openapi.yaml https://raw.githubusercontent.com/ilkereroglu/uuidify/main/api/openapi.yaml
+          
+      - name: Commit and Push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add openapi.yaml
+          git commit -m "chore: sync openapi.yaml from service repo" || exit 0
+          git push
